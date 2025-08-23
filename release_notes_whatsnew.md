@@ -21,7 +21,7 @@ Here is a list of release notes RSS feeds for Google Cloud products. These URLs 
 - Cloud Natural Language API: `https://cloud.google.com/feeds/cloud-natural-language-api-release-notes.xml`
 - Cloud Video Intelligence API: `https://cloud.google.com/feeds/cloud-video-intelligence-api-release-notes.xml`
 - Cloud Vision API: `https://cloud.google.com/feeds/cloud-vision-api-release-notes.xml`
-- Cloud Vision API Product Search: `https://cloud.google.com/feeds/cloud-vision-api-product-search-release-notes.xml`
+
 - Cloud Speech API: `https://cloud.google.com/feeds/cloud-speech-api-release-notes.xml`
 - Cloud Speech-to-Text: `https://cloud.google.com/feeds/cloud-speech-to-text-release-notes.xml`
 - Cloud Text-to-Speech API: `https://cloud.google.com/feeds/cloud-text-to-speech-api-release-notes.xml`
@@ -186,7 +186,7 @@ Of course, here is a more comprehensive list of Google Cloud release notes RSS f
 - **Gemini CLI (GitHub Releases):** `https://github.com/google-github-actions/run-gemini-cli/releases.atom`
 - **Google Cloud CLI:** https://github.com/google-gemini/gemini-cli/releases
 - **Cloud Search API:** `https://developers.google.com/feeds/cloud-search-release-notes.xml`
-- Firebase: https://firebase.google.com/feeds/firebase-release-notes.xml
+
 - Android Studio: https://androidstudio.googleblog.com/feeds/posts/default
 
 ### General Feeds
