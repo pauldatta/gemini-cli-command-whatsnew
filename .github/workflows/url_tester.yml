@@ -1,0 +1,104 @@
+name: URL Tester
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  test-urls:
+    runs-on: ubuntu-latest
+    outputs:
+      test_failed: ${{ steps.run_tests.outcome == 'failure' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install -r requirements.txt
+
+      - name: Run URL tests
+        id: run_tests
+        continue-on-error: true
+        run: .venv/bin/pytest -n auto --junitxml=report.xml
+
+      - name: Upload test report
+        if: steps.run_tests.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: report.xml
+
+  create-remediation-issue:
+    runs-on: ubuntu-latest
+    needs: test-urls
+    if: needs.test-urls.outputs.test_failed == 'true'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download test report
+        uses: actions/download-artifact@v4
+        with:
+          name: test-report
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Parse failed URLs and create issue body
+        id: parse_failures
+        run: |
+          cat << EOF > parse_report.py
+          import xml.etree.ElementTree as ET
+          import re
+          from urllib.parse import unquote
+          import os
+
+          def parse_junit_report(report_path):
+              """Parses a JUnit XML report and returns a list of failed URLs."""
+              tree = ET.parse(report_path)
+              root = tree.getroot()
+              failed_urls = []
+              for testcase in root.iter('testcase'):
+                  if testcase.find('failure') is not None:
+                      match = re.search(r'[(.*?)]', testcase.attrib['name'])
+                      if match:
+                          failed_urls.append(unquote(match.group(1)))
+              return sorted(list(set(failed_urls)))
+
+          failed_urls = parse_junit_report('report.xml')
+          issue_body = "The following URLs failed the daily check:\n\n"
+          for url in failed_urls:
+              issue_body += f"- `{url}`\n"
+          issue_body += "\n@gemini-cli please remediate these broken links."
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              print(f'issue_body<<EOF', file=f)
+              print(issue_body, file=f)
+              print(f'EOF', file=f)
+
+          EOF
+          python parse_report.py
+
+      - name: Create GitHub Issue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_BODY: ${{ steps.parse_failures.outputs.issue_body }}
+        run: |
+          gh issue create \
+            --title "Remediate Broken Release Note URLs" \
+            --body "$ISSUE_BODY" \
+            --label "bug"
