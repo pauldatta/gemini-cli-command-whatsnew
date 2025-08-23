@@ -59,4 +59,6 @@ db.sqlite3
 db.sqlite3-journal
 .python-version
 .DS_Store
-\n# Test reports\nreport.xml
+
+# Test reports
+report.xml
