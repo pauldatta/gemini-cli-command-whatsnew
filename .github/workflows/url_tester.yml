@@ -74,7 +74,7 @@ jobs:
               failed_urls = []
               for testcase in root.iter('testcase'):
                   if testcase.find('failure') is not None:
-                      match = re.search(r'[(.*?)]', testcase.attrib['name'])
+                      match = re.search(r'\[(.*?)\]', testcase.attrib['name'])
                       if match:
                           failed_urls.append(unquote(match.group(1)))
               return sorted(list(set(failed_urls)))
