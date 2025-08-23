@@ -1,0 +1,7 @@
+# This command will be invoked via: /dev:test
+description = "Runs the full Python unit test suite using the virtual environment."
+prompt = """
+Okay, I will run the unit tests.
+
+!{venv/bin/python -m unittest discover tests}
+"""

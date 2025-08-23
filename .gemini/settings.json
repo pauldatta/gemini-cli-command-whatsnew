@@ -1,0 +1,58 @@
+{
+  "mcpServers": {
+    "mermaid": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@peng-shawn/mermaid-mcp-server"
+      ]
+    },
+    "mermaid-validator": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@rtuin/mcp-mermaid-validator@latest"
+      ]
+    },
+    "veo": {
+      "command": "mcp-veo-go",
+      "env": {
+        "MCP_SERVER_REQUEST_TIMEOUT": "55000",
+        "GENMEDIA_BUCKET": "pauldatta-veo-testing/genstudio",
+        "PROJECT_ID": "veo-testing"
+      }
+    },
+    "imagen": {
+      "command": "mcp-imagen-go",
+      "env": {
+        "MCP_SERVER_REQUEST_TIMEOUT": "55000",
+        "GENMEDIA_BUCKET": "chirp-transcribe-paul",
+        "PROJECT_ID": "vital-octagon-19612"
+      }
+    },
+    "chirp3": {
+      "command": "mcp-chirp3-go",
+      "env": {
+        "GENMEDIA_BUCKET": "chirp-transcribe-paul",
+        "PROJECT_ID": "vital-octagon-19612"
+      }
+    },
+    "lyria": {
+      "command": "mcp-lyria-go",
+      "env": {
+        "GENMEDIA_BUCKET": "chirp-transcribe-paul",
+        "PROJECT_ID": "vital-octagon-19612",
+        "MCP_SERVER_REQUEST_TIMEOUT": "55000"
+      }
+    },
+     "context7": {
+      "httpUrl": "https://mcp.context7.com/mcp"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    }
+  }
+}

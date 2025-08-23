@@ -1,0 +1,21 @@
+# This command will be invoked via: /git:commit_and_push [optional message]
+description = "Generates a Conventional Commit message (if not provided), then commits and pushes."
+prompt = """
+You are about to perform a commit and push.
+
+Staged changes:
+```diff
+!{git diff --staged}
+```
+
+User-provided message: "{{args}}"
+
+**Your task:**
+
+1.  **Analyze the staged changes.**
+2.  If the user has provided a message in `{{args}}`, use that as the commit message.
+3.  If `{{args}}` is empty, **generate a concise and informative Conventional Commit message** based on the diff.
+4.  **Propose the final commit message to the user.**
+5.  **Ask for their confirmation** before proceeding.
+6.  If they confirm, use the `run_shell_command` tool to execute `git commit -m "THE_MESSAGE"` and then `git push`.
+"""

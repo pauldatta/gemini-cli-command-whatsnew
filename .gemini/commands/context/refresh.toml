@@ -1,0 +1,8 @@
+# This command will be invoked via: /context:refresh
+description = "Reloads the Gemini API documentation from the context/ folder."
+prompt = """
+Please read the following files and use them as my primary source of truth for our project's conventions and APIs.
+PROJECT_ROOT/README.md (obviously)
+PROJECT_ROOT/context/* for all
+PROJECT_ROOT/context/GEMINI* for dev and api context
+"""
