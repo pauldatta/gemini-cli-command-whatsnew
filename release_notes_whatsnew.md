@@ -184,7 +184,7 @@ Of course, here is a more comprehensive list of Google Cloud release notes RSS f
 
 - **Gemini Code Assist:** `https://developers.google.com/feeds/gemini-code-assist-free-release-notes.xml`
 - **Gemini CLI (GitHub Releases):** `https://github.com/google-github-actions/run-gemini-cli/releases.atom`
-- **Google Cloud CLI:** https://github.com/google-gemini/gemini-cli/releases
+- **Google Cloud CLI:** https://github.com/google-gemini/gemini-cli/releases.atom
 - **Cloud Search API:** `https://developers.google.com/feeds/cloud-search-release-notes.xml`
 
 - Android Studio: https://androidstudio.googleblog.com/feeds/posts/default
