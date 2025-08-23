@@ -11,10 +11,8 @@ def extract_urls_from_markdown(file_path):
     """Extracts all URLs from a markdown file."""
     with open(file_path, 'r') as f:
         content = f.read()
-    # Regex to find URLs in markdown format
-    urls = re.findall(r'\[.*?\]\(`(.*?)`\)', content)
     # Regex to find URLs in plain text
-    urls.extend(re.findall(r'https?://[^\s`]+', content))
+    urls = re.findall(r'https?://[^\s]+', content)
     return sorted(list(set(urls)))
 
 @pytest.mark.parametrize("url", extract_urls_from_markdown(MARKDOWN_FILE))
