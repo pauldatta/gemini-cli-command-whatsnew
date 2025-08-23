@@ -8,6 +8,7 @@ Here is a comprehensive list of release notes RSS feeds for Google Cloud product
 - **Cloud Search API:** https://developers.google.com/feeds/cloud-search-release-notes.xml
 - **Gemini Code Assist:** https://developers.google.com/feeds/gemini-code-assist-free-release-notes.xml
 - **Gemini CLI:** https://github.com/google-gemini/gemini-cli/releases.atom
+- **Jules:** https://jules.google/docs/changelog/
 
 ### General Feeds
 
