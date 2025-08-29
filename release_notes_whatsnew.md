@@ -4,6 +4,7 @@ Here is a comprehensive list of release notes RSS feeds for Google Cloud product
 
 ### Newly Added
 
+- **Cloud Assist:** https://cloud.google.com/feeds/gemini-release-notes.xml
 - **Android Studio:** https://androidstudio.googleblog.com/feeds/posts/default
 - **Cloud Search API:** https://developers.google.com/feeds/cloud-search-release-notes.xml
 - **Gemini Code Assist:** https://developers.google.com/feeds/gemini-code-assist-free-release-notes.xml
