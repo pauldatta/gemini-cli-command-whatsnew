@@ -35,10 +35,14 @@
 *   **Cloud Vision API Product Search:** https://cloud.google.com/feeds/visionproductsearch-release-notes.xml
 *   **Deep Learning VM:** https://cloud.google.com/feeds/deep-learning-vm-release-notes.xml
 *   **Dialogflow Enterprise Edition:** https://cloud.google.com/feeds/dialogflow-enterprise-edition-release-notes.xml
+*   **Document AI:** https://cloud.google.com/document-ai/docs/release-notes
 *   **ML Engine:** https://cloud.google.com/feeds/ml-engine-release-notes.xml
 *   **Recommendations AI:** https://cloud.google.com/feeds/recommendations-ai-release-notes.xml
+*   **Transcoder API:** https://cloud.google.com/transcoder/docs/release-notes
 *   **Translate:** https://cloud.google.com/feeds/translate-release-notes.xml
-*   **Vertex AI (via AI Platform feed):** https://cloud.google.com/feeds/aiplatform-release-notes.xml
+*   **Vertex AI:** https://cloud.google.com/feeds/aiplatform-release-notes.xml
+*   **Vertex AI Search and Conversation:** https://cloud.google.com/feeds/vertex-ai-release-notes.xml
+*   **Vertex AI Vision:** https://cloud.google.com/feeds/vertex-ai-release-notes.xml
 *   **Vision:** https://cloud.google.com/feeds/vision-release-notes.xml
 
 ### API Management
@@ -62,14 +66,23 @@
 *   **App Engine Standard Environment PHP Runtimes:** https://cloud.google.com/feeds/app-engine-standard-environment-php-runtimes-release-notes.xml
 *   **App Engine Standard Environment Python Runtimes:** https://cloud.google.com/feeds/app-engine-standard-environment-python-runtimes-release-notes.xml
 
+### Application Integration
+
+*   **Application Integration:** https://cloud.google.com/application-integration/docs/release-notes
+*   **Integration Connectors:** https://cloud.google.com/integration-connectors/docs/release-notes
+
 ### Compute
 
+*   **Bare Metal Solution:** https://cloud.google.com/bare-metal/docs/release-notes
+*   **Batch:** https://cloud.google.com/batch/docs/release-notes
 *   **Cloud Functions:** https://cloud.google.com/feeds/cloud-functions-release-notes.xml
 *   **Cloud Run (Static URL):** https://cloud.google.com/static/feeds/run-release-notes.xml (Note: Both Cloud Run feeds failed to browse. Investigate which is current/preferred.)
 *   **Cloud Run (Feeds URL):** https://cloud.google.com/feeds/cloud-run-release-notes.xml (Note: Both Cloud Run feeds failed to browse. Investigate which is current/preferred.)
 *   **Compute Engine:** https://cloud.google.com/feeds/compute-engine-release-notes.xml
 *   **Compute Engine Security Bulletins:** https://cloud.google.com/feeds/compute-engine-security-bulletins.xml
+*   **Confidential Computing:** https://cloud.google.com/confidential-computing/confidential-vm/docs/release-notes
 *   **GKE On-Prem:** https://cloud.google.com/feeds/gke-on-prem-release-notes.xml
+*   **Google Cloud VMware Engine:** https://cloud.google.com/vmware-engine/docs/release-notes
 *   **Google Kubernetes Engine (GKE - Static URL):** https://cloud.google.com/static/feeds/gke-main-release-notes.xml (Note: Both GKE/Kubernetes Engine feeds failed to browse. Investigate which is current/preferred.)
 *   **Kubernetes Engine:** https://cloud.google.com/feeds/kubernetes-engine-release-notes.xml (Note: Both GKE/Kubernetes Engine feeds failed to browse. Investigate which is current/preferred.)
 *   **Kubernetes Engine Rapid Channel:** https://cloud.google.com/feeds/kubernetes-engine-rapid-channel-release-notes.xml
@@ -89,17 +102,23 @@
 *   **Cloud Pub/Sub:** https://cloud.google.com/feeds/cloud-pub-sub-release-notes.xml
 *   **Data Catalog:** https://cloud.google.com/feeds/data-catalog-release-notes.xml
 *   **Dataflow:** https://cloud.google.com/feeds/dataflow-release-notes.xml
+*   **Dataplex:** https://cloud.google.com/dataplex/docs/release-notes
+*   **Datastream:** https://cloud.google.com/datastream/docs/release-notes
+*   **Looker:** https://cloud.google.com/looker/docs/release-notes
 
 ### Databases
 
+*   **AlloyDB for PostgreSQL:** https://cloud.google.com/alloydb/docs/release-notes
 *   **Cloud Bigtable:** https://cloud.google.com/feeds/cloud-bigtable-release-notes.xml
 *   **Cloud Firestore:** https://cloud.google.com/feeds/cloud-firestore-release-notes.xml
+*   **Cloud Memorystore for Memcached:** https://cloud.google.com/memorystore/docs/memcached/release-notes
 *   **Cloud Memorystore for Redis:** https://cloud.google.com/feeds/cloud-memorystore-for-redis-release-notes.xml
 *   **Cloud Spanner:** https://cloud.google.com/feeds/cloud-spanner-release-notes.xml
 *   **Cloud SQL:** https://cloud.google.com/feeds/cloud-sql-release-notes.xml
 *   **Cloud SQL for MySQL:** https://cloud.google.com/feeds/cloud-sql-mysql-release-notes.xml
 *   **Cloud SQL for PostgreSQL:** https://cloud.google.com/feeds/cloud-sql-postgres-release-notes.xml
 *   **Cloud SQL for SQL Server:** https://cloud.google.com/feeds/cloud-sql-server-release-notes.xml
+*   **Database Migration Service:** https://cloud.google.com/database-migration/docs/release-notes
 
 ### Developer Tools
 
@@ -114,6 +133,9 @@
 *   **Cloud Tools for Eclipse:** https://cloud.google.com/feeds/cloud-tools-for-eclipse-release-notes.xml
 *   **Cloud Tools for PowerShell:** https://cloud.google.com/feeds/cloud-tools-for-powershell-release-notes.xml
 *   **Cloud Tools for Visual Studio:** https://cloud.google.com/feeds/cloud-tools-for-visual-studio-release-notes.xml
+*   **Cloud Workstations:** https://cloud.google.com/workstations/docs/release-notes
+*   **Eventarc:** https://cloud.google.com/eventarc/docs/release-notes
+*   **Workflows:** https://cloud.google.com/workflows/docs/release-notes
 
 ### Hybrid and Multi-Cloud
 
@@ -135,6 +157,11 @@
 *   **Cloud Billing:** https://cloud.google.com/feeds/cloud-billing-release-notes.xml
 *   **Cloud Deployment Manager:** https://cloud.google.com/feeds/deployment-manager-release-notes.xml
 *   **Cloud Marketplace:** https://cloud.google.com/feeds/gcp-marketplace-release-notes.xml
+*   **Infrastructure Manager:** https://cloud.google.com/infrastructure-manager/docs/release-notes
+
+### Maps
+
+*   **Fleet Engine:** https://developers.google.com/maps/documentation/transportation-logistics/fleet-engine/release-notes (Note: No RSS feed available)
 
 ### Cloud Operations (formerly Stackdriver)
 
@@ -159,12 +186,18 @@
 *   **Cloud CDN:** https://cloud.google.com/feeds/cloud-cdn-release-notes.xml
 *   **Cloud DNS:** https://cloud.google.com/feeds/cloud-dns-release-notes.xml
 *   **Cloud Endpoints:** https://cloud.google.com/feeds/cloud-endpoints-release-notes.xml
+*   **Cloud Firewall Insights:** https://cloud.google.com/network-intelligence-center/docs/release-notes
 *   **Cloud Interconnect:** https://cloud.google.com/feeds/cloud-interconnect-release-notes.xml
 *   **Cloud Load Balancing:** https://cloud.google.com/feeds/cloud-load-balancing-release-notes.xml
+*   **Cloud NGFW:** https://cloud.google.com/firewall/docs/release-notes
 *   **Cloud Router:** https://cloud.google.com/feeds/cloud-router-release-notes.xml
 *   **Cloud VPN:** https://cloud.google.com/feeds/cloud-vpn-release-notes.xml
+*   **Network Connectivity Center:** https://cloud.google.com/network-connectivity/docs/release-notes
 *   **Network Intelligence Center:** https://cloud.google.com/feeds/networkintelligence-release-notes.xml
 *   **Network Service Tiers:** https://cloud.google.com/feeds/network-service-tiers-release-notes.xml
+*   **Network Topology:** https://cloud.google.com/feeds/network-intelligence-center-release-notes.xml
+*   **Private Service Connect:** https://cloud.google.com/feeds/vpc-release-notes.xml
+*   **Service Directory:** https://cloud.google.com/service-directory/docs/release-notes
 *   **Service Infrastructure:** https://cloud.google.com/feeds/service-infrastructure-release-notes.xml
 *   **Service Usage:** https://cloud.google.com/feeds/service-usage-release-notes.xml
 *   **Virtual Private Cloud (VPC):** https://cloud.google.com/feeds/virtual-private-cloud-release-notes.xml (Note: Both VPC feeds failed to browse. Investigate which is current/preferred.)
@@ -174,7 +207,13 @@
 ### Security and Identity
 
 *   **Access Context Manager:** https://cloud.google.com/feeds/access-context-manager-release-notes.xml
+*   **Assured Workloads:** https://cloud.google.com/assured-workloads/docs/release-notes
+*   **BeyondCorp Enterprise:** (Note: No RSS feed available)
 *   **Binary Authorization:** https://cloud.google.com/feeds/binary-authorization-release-notes.xml
+*   **Certificate Authority Service:** https://cloud.google.com/certificate-manager/docs/release-notes
+*   **Certificate Manager:** https://cloud.google.com/certificate-manager/docs/release-notes
+*   **Chronicle Security Operations:** https://cloud.google.com/feeds/chronicle-release-notes.xml
+*   **Chronicle SOAR:** https://cloud.google.com/feeds/chronicle-soar-release-notes.xml
 *   **Cloud Data Loss Prevention:** https://cloud.google.com/feeds/cloud-data-loss-prevention-release-notes.xml
 *   **Cloud IAM:** https://cloud.google.com/feeds/cloud-iam-release-notes.xml
 *   **Cloud IAM Permissions Change Log:** https://cloud.google.com/feeds/cloud-iam-permissions-change-log.xml
@@ -182,12 +221,17 @@
 *   **Cloud Identity:** https://cloud.google.com/feeds/cloud-identity-release-notes.xml
 *   **Cloud Key Management Service (KMS):** https://cloud.google.com/feeds/cloud-kms-release-notes.xml
 *   **Identity Platform:** https://cloud.google.com/feeds/identityplatform-release-notes.xml
+*   **Key Access Justifications:** https://cloud.google.com/assured-workloads/docs/release-notes?hl=en
 *   **Managed Service for Microsoft Active Directory:** https://cloud.google.com/feeds/managedmicrosoftad-release-notes.xml
+*   **reCAPTCHA Enterprise:** https://cloud.google.com/feeds/recaptcha-enterprise-release-notes.xml
 *   **Resource Manager:** https://cloud.google.com/feeds/resource-manager-release-notes.xml
-*   **Security Command Center:** https://cloud.google.com/feeds/scc-release-notes.xml
+*   **Risk Manager:** (Note: No RSS feed available)
 *   **Secret Manager:** https://cloud.google.com/feeds/secret-manager-release-notes.xml
+*   **Security Command Center:** https://cloud.google.com/feeds/scc-release-notes.xml
+*   **Sensitive Data Protection:** https://cloud.google.com/sensitive-data-protection/docs/release-notes
 *   **Web Risk:** https://cloud.google.com/feeds/web-risk-release-notes.xml
 *   **Web Risk API:** https://cloud.google.com/feeds/web-risk-api-release-notes.xml
+*   **Workload Identity Federation:** https://cloud.google.com/feeds/iam-release-notes.xml
 
 ### Storage
 
@@ -195,3 +239,7 @@
 *   **Cloud Storage:** https://cloud.google.com/feeds/cloud-storage-release-notes.xml
 *   **Storage Transfer Service:** https://cloud.google.com/feeds/storagetransfer-release-notes.xml
 *   **Transfer Appliance:** https://cloud.google.com/feeds/transfer-appliance-release-notes.xml
+-notes.xml
+eds/storagetransfer-release-notes.xml
+*   **Transfer Appliance:** https://cloud.google.com/feeds/transfer-appliance-release-notes.xml
+-notes.xml
