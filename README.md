@@ -2,6 +2,12 @@
 
 This project contains a custom `whatsnew` command for the Gemini CLI. It fetches and summarizes release notes for various Google Cloud products.
 
+![Gemini CLI whatsnew command demo](media/whatsnew-gemini-cli-command.gif)
+
+## Blog Post
+
+Read more about this project in the blog post: [whatsnew: A Custom Gemini CLI Command](https://open.substack.com/pub/aipositive/p/whatsnew-a-custom-gemini-cli-command?r=nmjh9&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+
 ## Installation
 
 To install the `whatsnew` command, run the following in your terminal:
